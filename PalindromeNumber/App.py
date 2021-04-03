@@ -12,7 +12,7 @@ def checkPalindrome(str):
 
 
 def main():
-    st = "112233445566778899000000998877665544332211"
+    st = "112233445566778899000000998877665544332211    "
     
     if(checkPalindrome(st) == True):
         print("it is a palindrome")
