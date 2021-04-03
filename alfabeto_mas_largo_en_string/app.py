@@ -1,3 +1,5 @@
+import sys
+
 def lengthOfLongestSubstring(s):
     checklist = {}
     starting_index_of_current_substring = 0
@@ -14,10 +16,16 @@ def lengthOfLongestSubstring(s):
     return length_of_longest_substring
 
 ## Main
-result = {}
+def main(args):
+    string = args[0]
+    result = {}
 
-for string in ["abcbdbbdsdfng"]:
-    result[string] = lengthOfLongestSubstring(string)
+    result = lengthOfLongestSubstring(string)
 
-for i in result:
     print(result)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+
+
